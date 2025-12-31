@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Diri — Wierdyan Azfa</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #0f172a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.12);
+      max-width: 680px;
+      width: 100%;
+      overflow: hidden;
+      animation: fadeIn .7s ease;
+    }
+    .banner {
+      height: 160px;
+      background: linear-gradient(120deg, #38bdf8, #818cf8, #c084fc);
+    }
+    .profile {
+      padding: 28px 28px 32px;
+    }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 28px;
+      color: #020617;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #334155;
+    }
+    .meta {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .meta div {
+      background: #f1f5f9;
+      border-radius: 14px;
+      padding: 10px 14px;
+      font-size: 14px;
+      color: #0f172a;
+    }
+    p {
+      line-height: 1.6;
+      color: #334155;
+      margin: 0 0 16px;
+    }
+    footer {
+      font-size: 13px;
+      color: #64748b;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="banner"></div>
+    <section class="profile">
+      <h1>Wierdyan Azfa</h1>
+      <h2>Mahasiswa TIK — Prodi TRKJ</h2>
+
+      <img src="https://via.placeholder.com/140" alt="Foto Profil" style="width:140px;height:140px;border-radius:9999px;object-fit:cover;border:4px solid #e2e8f0;margin:18px 0;" />
+
+      <div class="meta">
+        <div><strong>NIM:</strong> 202290430046</div>
+        <div><strong>Status:</strong> Mahasiswa aktif</div>
+      </div>
+
+      <p>
+        Saya adalah mahasiswa pada program studi Teknologi Rekayasa Komputer Jaringan (TRKJ)
+        dengan minat pada jaringan komputer, server, dan pengelolaan sistem. Saya senang belajar
+        hal‑hal baru, mencoba praktik langsung, serta mengembangkan kemampuan teknis yang bermanfaat
+        untuk dunia kerja.
+      </p>
+
+      <!-- Display tambahan: kartu informasi singkat -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:20px 0 10px;">
+        <div style="background:#f8fafc;border-radius:18px;padding:14px 16px;box-shadow:0 6px 14px rgba(15,23,42,.06);">
+          <strong>Fokus</strong>
+          <p style="margin:6px 0 0;font-size:14px;color:#475569;">Jaringan & Server</p>
+        </div>
+        <div style="background:#f8fafc;border-radius:18px;padding:14px 16px;box-shadow:0 6px 14px rgba(15,23,42,.06);">
+          <strong>Keahlian</strong>
+          <p style="margin:6px 0 0;font-size:14px;color:#475569;">Linux, Konfigurasi jaringan</p>
+        </div>
+        <div style="background:#f8fafc;border-radius:18px;padding:14px 16px;box-shadow:0 6px 14px rgba(15,23,42,.06);">
+          <strong>Kontak</strong>
+          <p style="margin:6px 0 0;font-size:14px;color:#475569;">email@example.com</p>
+        </div>
+      </div>
+
+      <footer>
+        &copy; 2025 — Profil singkat Wierdyan Azfa
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
